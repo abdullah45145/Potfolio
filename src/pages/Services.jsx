@@ -1,5 +1,5 @@
 import React from "react";
-import steps from "../assets/steps.png";
+import steps from "../assets/Steps.png";
 import ProgramMarquee from "../ui/Marquee";
 import Skills from "../ui/Skills.jsx";
 import { useEffect } from "react";
