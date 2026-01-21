@@ -1,22 +1,24 @@
-import React from 'react'
+import React from "react";
 
 const ProjectCard = (props) => {
-    return (
-        <>
-            <div className='lg:w-1/2 group transition-all relative rounded-none hover:rounded-[70px] overflow-hidden h-full '>
-                <img className='h-full w-full object-cover' src={props.image1} alt="" />
-                <div className='opacity-0 transition-opacity group-hover:opacity-100 absolute top-0 flex items-center justify-center left-0 h-full w-full bg-black/15'>
-                    <h2 className='uppercase text-6xl font-[font1] border-4 pt-4 px-8 text-white border-white rounded-full '>Vior le projet</h2>
-                </div>
-            </div>
-            <div className='lg:w-1/2 group transition-all relative rounded-none hover:rounded-[70px] overflow-hidden h-full '>
-                <img className='h-full w-full object-cover' src={props.image2} alt="" />
-                <div className='opacity-0 transition-opacity group-hover:opacity-100 absolute top-0 flex items-center justify-center left-0 h-full w-full bg-black/15'>
-                    <h2 className='uppercase text-6xl font-[font1] border-4 pt-4 px-8 text-white border-white rounded-full '>Vior le projet</h2>
-                </div>
-            </div>
-        </>
-    )
-}
+  return (
+    <div
+      onClick={props.onClick}
+      className="w-full h-full group transition-all relative rounded-xl hover:rounded-2xl overflow-hidden cursor-pointer"
+    >
+      <img
+        loading="lazy"
+        className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300"
+        src={props.image}
+        alt=""
+      />
+      <div className="opacity-0 transition-opacity group-hover:opacity-100 absolute top-0 flex items-center justify-center left-0 h-full w-full bg-black/15">
+        <h2 className="uppercase text-4xl md:text-5xl font-[font1] border-4 pt-4 px-8 text-white border-white rounded-full">
+          View Project
+        </h2>
+      </div>
+    </div>
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

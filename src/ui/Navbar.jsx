@@ -47,7 +47,7 @@ const Navbar = () => {
     { name: "", path: "/" },
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Achievement", path: "/achievement" },
+    { name: "Github", path: "https://github.com/abdullah45145" },
     { name: "About Me", path: "/about" },
     {name : "Projects", path: "/projects" },
   ];
@@ -56,7 +56,7 @@ const Navbar = () => {
     <motion.nav
       initial={{ y: -40, opacity: 0 }}
       animate={{
-        y: showNav ? 0 : -100, // 👈 moves navbar up/down on scroll
+        y: showNav ? 0 : -100, 
         opacity: showNav ? 1 : 0.5,
       }}
       transition={{ duration: 0.4, ease: "easeOut" }}
@@ -107,24 +107,14 @@ const Navbar = () => {
         initial="hidden"
         animate="visible"
       >
-        <Link to="/signup">
+        <Link to="/contact">
           <motion.button
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-10 lg:px-8 py-2 lg:py-3 cursor-pointer font-paytone font-semibold rounded-full bg-gray-800/70 hover:bg-gray-700 transition text-xs sm:text-sm"
+            className="px-10 lg:px-8 py-2 lg:py-3 cursor-pointer font-paytone font-semibold rounded-full bg-[#1a1326] hover:bg-gray-700 transition text-xs sm:text-sm"
           >
-            Sign Up
-          </motion.button>
-        </Link>
-        <Link to="/login">
-          <motion.button
-            variants={itemVariants}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-10 lg:px-8 py-2 lg:py-3 font-paytone cursor-pointer font-semibold rounded-full bg-[#1a1326] hover:opacity-90 transition text-xs sm:text-sm"
-          >
-            Log In
+           Get in Touch
           </motion.button>
         </Link>
       </motion.div>
@@ -147,7 +137,7 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -10, scale: 0.98 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="absolute top-[100%] left-0 w-full 
-                       bg-[#050020]/95 backdrop-blur-xl 
+                       bg-[#da9a1922] backdrop-blur-xl 
                        rounded-3xl px-6 py-6 flex flex-col 
                        space-y-4 md:hidden z-40"
           >
@@ -158,8 +148,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `block text-base font-paytone transition ${
                     isActive
-                      ? "text-[#5f00ff] font-bold"
-                      : "hover:text-blue-400"
+                      ? "text-[#271502] font-bold"
+                      : "hover:text-blue-900"
                   }`
                 }
                 onClick={() => setOpen(false)}
@@ -169,20 +159,15 @@ const Navbar = () => {
             ))}
 
             <div className="flex flex-col sm:flex-row sm:space-x-3 pt-4">
+             <Link to="/contact" className="w-full">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex-1 py-3 rounded-full bg-gray-800/70 hover:bg-gray-700 transition font-paytone text-sm"
+                className="flex-1 w-full py-3 rounded-full bg-[#8b4917e1] hover:bg-gray-700 transition font-paytone text-sm"
               >
-                Sign Up
+                Get in Touch
               </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="flex-1 py-3 rounded-full bg-[#5f00ff] hover:opacity-90 transition font-paytone text-sm mt-3 sm:mt-0"
-              >
-                Log In
-              </motion.button>
+              </Link>
             </div>
           </motion.div>
         )}

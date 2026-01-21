@@ -16,7 +16,8 @@ const skills = [
   { name: "GSAP", icon: SiGreensock, color: "#88CE02" },
   { name: "Framer Motion", icon: SiFramer, color: "#E10098" },
   { name: "Vercel", icon: SiVercel, color: "#ffffff" },
-  { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" }
+  { name: "Bootstrap", icon: FaBootstrap, color: "#7952B3" },
+  { name: "Netlify", icon: SiVercel, color: "#00C7B7" }
 ];
 
 export default function SkillsShowcase() {

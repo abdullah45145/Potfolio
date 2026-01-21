@@ -4,6 +4,7 @@ import ProgramMarquee from "../ui/Marquee";
 import Skills from "../ui/Skills.jsx";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import ok from "../assets/ok.png";
 
 const ServiceCard = ({ title, children, img }) => {
   return (
@@ -36,6 +37,7 @@ const ServiceCard = ({ title, children, img }) => {
       {img && (
         <motion.div className="mt-6 overflow-hidden rounded-xl">
           <motion.img
+            loading="lazy"
             src={img}
             alt={title}
             className="w-full h-auto object-cover"
@@ -101,8 +103,12 @@ const Services = () => {
               interfaces for web and mobile apps that strengthen your brand
               value.
             </ServiceCard>
-
-            <ServiceCard title="AI Automations" img={steps}>
+            <ServiceCard
+              title="AI Automations"
+              img={
+             ok
+              }
+            >
               Streamline your operations. I build custom AI chatbots and smart
               n8n workflows to automate your marketing and repetitive tasks.
             </ServiceCard>

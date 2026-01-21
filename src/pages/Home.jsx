@@ -10,27 +10,34 @@ import ContactPage from "./Contactpage.jsx";
 const Home = () => {
   return (
     <>
-    <div className="relative w-screen h-screen overflow-hidden rounded-4xl">
+    <div className="relative w-screen h-screen  overflow-hidden rounded-4xl">
       {/* Background Image */}
-      <img
-        src={Homepageimage}
-        alt="Homepage Background"
-        className="absolute top-0 left-0 w-full h-full object-cover object-left"
-      />
+     <img
+  src={Homepageimage}
+  loading="lazy"
+  alt="Homepage Background"
+  className="
+    absolute top-0 left-0 w-full h-full
+    object-cover
+    object-right           /* default for all screens */
+    sm:object-right   /* ensure left alignment on small screens */
+  "
+/>
 
       {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
 
       {/* Animated Bottom Text */}
- <div className="absolute bottom-0 mb-1 left-1/2 -translate-x-1/2 translate-y-[20%] select-none">
+<div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-[20%] select-none text-center mb-8">
   {/* Black Layer */}
   <motion.div
     className="
       absolute inset-0
-      text-[11rem] md:text-[13rem]
       font-extrabold font-inter
       text-black
       stroke-black
+      leading-[1] 
+      text-[5rem] sm:text-[8rem] md:text-[11rem] lg:text-[13rem] 
     "
     initial={{ opacity: 0, y: 50, scale: 1.9 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -43,11 +50,13 @@ const Home = () => {
   <motion.div
     className="
       relative
-      text-[11rem] md:text-[13rem]
       font-extrabold font-inter
       text-white
       stroke-white
-      translate-x-[4px] translate-y-[4px]
+      leading-[1]
+      translate-x-[2px] sm:translate-x-[3px] md:translate-x-[4px]
+      translate-y-[2px] sm:translate-y-[3px] md:translate-y-[4px]
+      text-[5rem] sm:text-[8rem] md:text-[11rem] lg:text-[13rem]
     "
     initial={{ opacity: 0, y: 50, scale: 0.9 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
