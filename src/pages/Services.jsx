@@ -12,7 +12,7 @@ const ServiceCard = ({ title, children, img }) => {
       className="
         bg-[#141414]
         rounded-2xl
-        p-6 md:p-8
+        p-6 md:p-8 sm:p-0
         shadow-[0_10px_30px_rgba(0,0,0,0.6)]
         hover:shadow-[0_20px_60px_rgba(0,0,0,0.9)]
         "

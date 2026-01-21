@@ -137,7 +137,7 @@ const Navbar = () => {
             exit={{ opacity: 0, y: -10, scale: 0.98 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
             className="absolute top-[100%] left-0 w-full 
-                       bg-[#da9a1922] backdrop-blur-xl 
+                       bg-[#f8f6f4] backdrop-blur-xl text-black
                        rounded-3xl px-6 py-6 flex flex-col 
                        space-y-4 md:hidden z-40"
           >
@@ -163,7 +163,7 @@ const Navbar = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex-1 w-full py-3 rounded-full bg-[#8b4917e1] hover:bg-gray-700 transition font-paytone text-sm"
+                className="flex-1 w-full py-3 text-white rounded-full bg-[#8b4917e1] hover:bg-gray-700 transition font-paytone text-sm"
               >
                 Get in Touch
               </motion.button>

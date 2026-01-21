@@ -33,7 +33,7 @@ export default function SkillsShowcase() {
 
   return (
     <section
-      className="relative min-h-80 bg-black flex items-start justify-center overflow-hidden"
+      className="relative min-h-80 sm:p-0 bg-black flex items-start justify-center overflow-hidden"
       onMouseMove={handleMouseMove}
     >
       {/* Sparkling lights */}

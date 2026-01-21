@@ -11,6 +11,7 @@ import spheresm from "../assets/sphere_sm.png";
 import spheremd from "../assets/sphere_md.png";
 import { Link } from "react-router-dom";
 
+
 const AboutMe = () => {
   const { scrollY } = useScroll();
 
