@@ -42,6 +42,7 @@ const Home = () => {
     initial={{ opacity: 0, y: 50, scale: 1.9 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ duration: 1.5, ease: 'easeOut' }}
+    style={{ fontFamily: "'inter', sans-serif" }}
   >
     AbdullaH
   </motion.div>
@@ -61,6 +62,7 @@ const Home = () => {
     initial={{ opacity: 0, y: 50, scale: 0.9 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     transition={{ duration: 1.5, ease: 'easeOut', delay: 0.05 }}
+    style={{ fontFamily: "'inter', sans-serif" }}
   >
     AbdullaH
   </motion.div>
@@ -83,6 +85,7 @@ const Home = () => {
           initial={{ opacity: 0, y: 30, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
+          style={{ fontFamily: "'inter', sans-serif" }}
         >
           Full Stack <br />
           Developer

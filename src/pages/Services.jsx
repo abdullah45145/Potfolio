@@ -75,12 +75,12 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-10 md:px-10 py-20">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-6 mb-14">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-inter font-extrabold tracking-tight max-w-3xl">
+          <h2 style={{ fontFamily: "'inter', sans-serif" }} className="text-3xl md:text-4xl lg:text-5xl font-inter font-extrabold tracking-tight max-w-3xl">
             How I Can Help Your Business
           </h2>
 
           <button className="self-start bg-neutral-900/60 border border-white/10 text-white px-5 py-2.5 rounded-full flex items-center gap-3 hover:bg-white hover:text-black transition-all">
-            <span>Get in Touch</span>
+            <span >Get in Touch</span>
             <span className="w-7 h-7 bg-white text-black rounded-full grid place-items-center">
               ↗
             </span>
