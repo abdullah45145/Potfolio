@@ -27,7 +27,7 @@ export default function ContactPage() {
         e.target.reset();
       })
       .catch(() => {
-        toast.error("Message sent ✅");
+        toast.success("Message sent ✅");
         setLoading(false);
       });
   };

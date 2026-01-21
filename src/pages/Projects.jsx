@@ -27,7 +27,7 @@ const Projects = () => {
     {
       id: 3,
       image:
-        "https://k72.ca/uploads/caseStudies/Opto/thumbnailimage_opto-1280x960.jpg",
+        "https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg",
     },
     {
       id: 4,
