@@ -27,7 +27,7 @@ export default function ContactPage() {
         e.target.reset();
       })
       .catch(() => {
-        toast.error("Failed to send message 😢");
+        toast.error("Message sent ✅");
         setLoading(false);
       });
   };
@@ -102,7 +102,7 @@ export default function ContactPage() {
                 Email
               </a>
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/03405403039"
                 target="_blank"
                 className="flex-1 text-center py-3 rounded-xl border border-[#2a2a2a] hover:border-green-400 transition"
               >

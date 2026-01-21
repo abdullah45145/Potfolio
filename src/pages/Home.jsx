@@ -78,14 +78,13 @@ const Home = () => {
       >
         <motion.h1
           className="font-sekuya font-extrabold
-               text-[#0a0808] text-[4rem] md:text-[4rem] sm:text-[2rem]
-               leading-[4rem] tracking-tighter uppercase
+               text-[#0a0808] text-[4rem] md:text-[4rem] sm:text-[1.4rem]
+               leading-[4rem] tracking-tighter uppercase 
                drop-shadow-[0_0_25px_rgba(0,0,0,0.8)]
                mb-4"
           initial={{ opacity: 0, y: 30, scale: 0.95 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.5 }}
-          style={{ fontFamily: "'inter', sans-serif" }}
         >
           Full Stack <br />
           Developer

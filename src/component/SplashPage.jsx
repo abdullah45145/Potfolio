@@ -238,7 +238,7 @@ const SplashPage = ({ onFinish }) => {
   // Progress and timer
   useEffect(() => {
     const startTime = Date.now();
-    const duration = 10500; // 10 seconds
+    const duration = 500; // 10 seconds
 
     const progressInterval = setInterval(() => {
       const elapsed = Date.now() - startTime;
