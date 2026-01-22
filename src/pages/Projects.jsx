@@ -3,6 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { useNavigate } from "react-router-dom";
 import ProjectCard from "../component/ProjectCard.jsx";
 import image from "../assets/AIBookBuilder/image.png";
+import image2 from "../assets/project2.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
@@ -16,8 +17,7 @@ const Projects = () => {
     },
     {
       id: 1,
-      image:
-        "https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_1280x960-1280x960.jpg",
+      image: image2,
     },
     {
       id: 2,

@@ -7,6 +7,9 @@ import image2 from "../assets/AIBookBuilder/image2.png";
 import image3 from "../assets/AIBookBuilder/image3.png";
 import image4 from "../assets/AIBookBuilder/image4.png";
 import image5 from "../assets/AIBookBuilder/image5.png";
+import image11 from "../assets/projectimage11.png";
+import image12 from "../assets/projectimage12.png";
+import image13 from "../assets/projectimage13.png";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -29,13 +32,11 @@ const ProjectDetail = () => {
     },
 
     1: {
-      title: "Project 2: Widescape",
+      title: "Project 2: Solve Design",
       description: "A premium website designed with strong brand identity.",
       about: "Focused on UX, animations, and performance metrics.",
-      technologies: ["React", "Tailwind CSS", "TypeScript"],
-      images: [
-        "https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---Thumbnail-1280x960.jpg",
-      ],
+      technologies: ["React", "Tailwind CSS",],
+      images: [ image11,image12,image13],
       features: [
         "Brand-Aligned Design",
         "Mobile-First",
