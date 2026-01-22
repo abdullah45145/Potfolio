@@ -10,6 +10,9 @@ import image5 from "../assets/AIBookBuilder/image5.png";
 import image11 from "../assets/projectimage11.png";
 import image12 from "../assets/projectimage12.png";
 import image13 from "../assets/projectimage13.png";
+import main1 from "../assets/project3/main1.png";
+import p2 from "../assets/project3/p2.png";
+import p3 from "../assets/project3/p3.png";
 
 const ProjectDetail = () => {
   const { id } = useParams();
@@ -24,19 +27,15 @@ const ProjectDetail = () => {
         "AI Book Builder is a scalable full-stack application built to streamline AI-driven book creation.It combines a responsive frontend with a robust backend architecture for smooth performance. The system supports secure authentication, dynamic content handling, and optimized data storage. Its modern UI ensures an efficient and engaging experience for content creators.",
       technologies: ["React", "Tailwind CSS", "Express", "Nodejs", "Mongo db"],
       images: [image1, image2, image3, image4, image5],
-      features: [
-        "Fully Responsive Design",
-        "High Performance",
-        "Modern UI/UX",
-      ],
+      features: ["Fully Responsive Design", "High Performance", "Modern UI/UX"],
     },
 
     1: {
       title: "Project 2: Solve Design",
       description: "A premium website designed with strong brand identity.",
       about: "Focused on UX, animations, and performance metrics.",
-      technologies: ["React", "Tailwind CSS",],
-      images: [ image11,image12,image13],
+      technologies: ["React", "Tailwind CSS"],
+      images: [image11, image12, image13],
       features: [
         "Brand-Aligned Design",
         "Mobile-First",
@@ -46,18 +45,18 @@ const ProjectDetail = () => {
     },
 
     2: {
-      title: "Project 3: OKA",
-      description: "Luxury e-commerce experience for OKA.",
-      about: "Advanced product filtering with seamless checkout.",
-      technologies: ["Next.js", "Tailwind CSS", "E-Commerce"],
-      images: [
-        "https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg",
-      ],
+      title: "Project 3: Countiopia",
+      description:
+        "A modern country-based eCommerce platform with advanced filtering and a seamless checkout experience.",
+      about:
+        "Countiopia is a high-performance country-focused shopping platform featuring advanced product filtering, optimized checkout flow, and a luxury user interface designed for speed and usability.",
+      technologies: ["React", "Tailwind CSS"],
+      images: [main1, p2, p3],
       features: [
-        "Luxury UI",
-        "Advanced Filters",
-        "Fast Checkout",
-        "SEO Optimized",
+        "Luxury & Responsive UI",
+        "Advanced Product Filtering",
+        "Fast & Secure Checkout",
+        "SEO Optimized Architecture",
       ],
     },
 
@@ -149,8 +148,8 @@ const ProjectDetail = () => {
             ))}
           </div>
         </div>
-          {/* Feautures */}
-         <div>
+        {/* Feautures */}
+        <div>
           <h2 className="text-3xl font-bold mb-6 mt-4">Feautures</h2>
           <div className="flex flex-wrap gap-4">
             {project.features.map((feature, i) => (

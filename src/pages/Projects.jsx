@@ -2,9 +2,10 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import { useNavigate } from "react-router-dom";
 import ProjectCard from "../component/ProjectCard.jsx";
-import image from "../assets/AIBookBuilder/image.png";
+import bookbuilder from "../assets/pro2.png";
 import image2 from "../assets/project2.png";
 import gsap from "gsap";
+import main1 from "../assets/project3/main1.png";
 import { ScrollTrigger } from "gsap/all";
 
 const Projects = () => {
@@ -13,7 +14,7 @@ const Projects = () => {
   const projects = [
     {
       id: 0,
-      image: image
+      image: bookbuilder
     },
     {
       id: 1,
@@ -21,8 +22,7 @@ const Projects = () => {
     },
     {
       id: 2,
-      image:
-        "https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg",
+      image: main1,
     },
     {
       id: 3,
