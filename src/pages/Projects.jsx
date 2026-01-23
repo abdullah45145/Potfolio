@@ -1,29 +1,24 @@
 import React from "react";
-import { useGSAP } from "@gsap/react";
 import { useNavigate } from "react-router-dom";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+
 import ProjectCard from "../component/ProjectCard.jsx";
+
 import bookbuilder from "../assets/pro2.png";
 import image2 from "../assets/project2.png";
-import gsap from "gsap";
 import main1 from "../assets/project3/main1.png";
-import { ScrollTrigger } from "gsap/all";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
   const navigate = useNavigate();
 
   const projects = [
-    {
-      id: 0,
-      image: bookbuilder
-    },
-    {
-      id: 1,
-      image: image2,
-    },
-    {
-      id: 2,
-      image: main1,
-    },
+    { id: 0, image: bookbuilder },
+    { id: 1, image: image2 },
+    { id: 2, image: main1 },
     {
       id: 3,
       image:
@@ -41,32 +36,37 @@ const Projects = () => {
     },
   ];
 
-  gsap.registerPlugin(ScrollTrigger);
-
   useGSAP(() => {
-    gsap.from(".hero", {
-      y: 150,
-      opacity: 0,
-      scale: 0.9,
-      rotateX: 10,
-      duration: 1.2,
-      ease: "power3.out",
-      stagger: 0.2,
-      scrollTrigger: {
-        trigger: ".lol",
-        start: "top 105%",
-      },
+    gsap.utils.toArray(".hero").forEach((card, index) => {
+      gsap.from(card, {
+        x: index % 2 === 0 ? 120 : -120, // left / right
+        opacity: 0,
+        scale: 0.95,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      });
     });
+
+    // cleanup on unmount
+    return () => ScrollTrigger.getAll().forEach(t => t.kill());
   });
 
   return (
     <div className="lg:p-4 p-2 mb-[10vh]">
-      <div className=" pt-[10vh]">
-        <h2 className="font-[font2] lg:text-[9.5vw] text-7xl font-inter uppercase">
-          Projets
+      {/* Heading */}
+      <div className="pt-[10vh]">
+        <h2 className="font-[font2] lg:text-[9.5vw] text-7xl uppercase">
+          Projects
         </h2>
       </div>
-      <div className="-lg:mt-20 lol grid grid-cols-1 md:grid-cols-2 gap-2">
+
+      {/* Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-10">
         {projects.map((elem) => (
           <div
             key={elem.id}

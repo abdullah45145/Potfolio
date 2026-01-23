@@ -23,7 +23,7 @@ export default function ContactPage() {
         e.target
       )
       .then(() => {
-        toast.success("Message sent successfully 🚀");
+        toast.success("Message sent ✅");
         setLoading(false);
         e.target.reset();
       })

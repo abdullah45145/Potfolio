@@ -107,8 +107,8 @@ const ProjectDetail = () => {
   return (
     <motion.div
       className="min-h-screen bg-black text-white"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 ,y:80}}
+      animate={{ opacity: 1 ,y:0}}
     >
       <div className="max-w-7xl mx-auto px-6 pt-10">
         {/* Back Button */}
